@@ -122,6 +122,16 @@ A client that has fallen behind is skipped rather than queued, so the viewfinder
 newest frame. The app side reads with `NWConnection` (raw TCP, so no App Transport Security
 exception is needed) and decodes off the main actor.
 
+## For coding agents
+
+The repo ships an [agent skill](skills/hypersimcam/SKILL.md) that tells a coding agent when
+to reach for this, how to adopt it in an app, and how to verify it without keeping pictures
+of you. Install it for your user with the [skills CLI](https://github.com/vercel-labs/skills):
+
+```sh
+npx skills add hypersocialinc/hypersimcam -g
+```
+
 ## Development
 
 ```sh

@@ -74,6 +74,8 @@ public struct SimCameraPicker: View {
             Text(command)
                 .font(.system(size: 13, weight: .bold, design: .monospaced))
                 .foregroundStyle(.yellow)
+                // One line, shrunk to fit: a command that wraps mid-flag reads as two.
+                .lineLimit(1).minimumScaleFactor(0.5)
                 .textSelection(.enabled)
             Button("Try again") { feed.start() }
                 .font(.system(size: 15, weight: .bold)).foregroundStyle(.white)
