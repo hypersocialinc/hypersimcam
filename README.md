@@ -43,6 +43,9 @@ hypersimcam --list           list the cameras and their indexes
 hypersimcam --port <port>    listen somewhere other than 47865
 ```
 
+The indexes are ffmpeg's and can change when a camera is plugged in or an iPhone comes into
+range, so check `--list` again if the wrong camera opens.
+
 The first run makes macOS ask for camera permission **for your terminal app** (Terminal,
 iTerm, your editor's terminal), because that is the process ffmpeg runs under. Allow it, then
 run the command again.
