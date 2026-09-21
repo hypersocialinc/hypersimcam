@@ -1,0 +1,19 @@
+.DS_Store
+node_modules/
+npm-debug.log*
+
+# Swift / Xcode
+.build/
+.swiftpm/
+DerivedData/
+*.xcodeproj
+xcuserdata/
+Package.resolved
+
+# Never commit camera frames
+*.jpg
+*.jpeg
+*.png
+*.mjpeg
+*.mov
+*.mp4

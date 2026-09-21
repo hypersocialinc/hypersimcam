@@ -1,0 +1,36 @@
+{
+  "name": "hypersimcam",
+  "version": "0.1.0",
+  "description": "A live camera feed for the iOS Simulator, from the Mac's camera, over loopback.",
+  "type": "module",
+  "bin": {
+    "hypersimcam": "bin/hypersimcam.js"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "start": "node bin/hypersimcam.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "darwin"
+  ],
+  "keywords": [
+    "ios",
+    "simulator",
+    "camera",
+    "xcode",
+    "swiftui",
+    "ffmpeg"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypersocialinc/hypersimcam.git"
+  },
+  "license": "MIT"
+}
